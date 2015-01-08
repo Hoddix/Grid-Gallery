@@ -1,12 +1,13 @@
 CONFIGURACION
-
+==========
 GP Grid Gallery
-
+==========
 Es una galería de imágenes inspirada en los álbumes de Google+.
 
 Esta basada en JavaScript y desarrollada bajo el Framework jQuery en su versión 1.11.0. La galería es configurable y con posibilidad de cargar mas de una en el mismo documento o contenedor.
 
 Propiedades
+==========
 La galería esta compuesta de:
 
 Un contenedor, donde se colocaran las fotos.
@@ -23,6 +24,7 @@ Para cargar la galería, tenemos que indicar el contenedor donde queremos que es
 $('.album').galería();
 
 Opciones configurables
+==========
 Podemos configurar algunos parámetros de la galería.
 
 directory Directorio donde se alojan las fotos. Por defecto album
@@ -36,7 +38,9 @@ marginleft Margin left del contenedor que porta la galería. Por defecto 0px
 Los parámetros margintop, marginright, marginbottom y marginleft pueden ir en px o en %. El contra el parámetro imgmargin solo ha de ser un numero entero.
 
 EJEMPLOS
+==========
 Uso simple de la galería
+==========
 La forma simple no lleva ningún parámetro.
 
 <div class="album"></div>
@@ -46,6 +50,7 @@ $('.album').galeria();
 Esta es la configuración básica, por lo que la galería se adapta al 100% del contenedor donde se carga. La altura de la galería dependerá del numero de fotos que esta contenga.
 
 Uso de la galería con parámetros
+==========
 Directorio donde están las imágenes:
 
 Indicamos el directorio donde están las imágenes mediante la variable directory y lo hacemos mediante un string. También puede ser una ruta determinada.
@@ -55,7 +60,7 @@ Indicamos el directorio donde están las imágenes mediante la variable director
 $('.album').galeria( { directory : 'mis_fotos' } );
 
 Margen entre imágenes:
-
+==========
 Podemos determinar el margen de separación entre las fotos de la galería, indicaremos en la variable imgmargen el margen de separación con un numero entero (por razones estéticas se aconseja de 0 a 10).
 
 <div class="album"></div>
@@ -63,11 +68,10 @@ Podemos determinar el margen de separación entre las fotos de la galería, indi
 $('.album').galeria( { imgmargin : 5 } );
 
 Márgenes de la galería:
-
+==========
 Determinaremos los márgenes de la galería frente al contenedor donde esta colocada.
 
 Esto se hace mediante las variables:
-
 margintop
 marginright
 marginbottom
@@ -79,7 +83,7 @@ Los valores han de ser en formato string e irán con la nomenclatura px o %, seg
 $( '.album' ).galeria({ marginright:'75px', marginleft:'75px', margintop:'75px', marginbottom:'75px' });
 
 Tamaño de las imagenes:
-
+==========
 En caso de tener un diseño repondivo, podemos hacer que el grid sea mas pequeño, basta con darle a las imagenes un tamaño maximo, lo cual genereara un grid mas pequeño, acorde con el dispositivo donde queramos mostralo.
 
 El valor ha de ser en formato Integer.
@@ -89,7 +93,7 @@ El valor ha de ser en formato Integer.
 $( '.album' ).galeria({ maxheight : 100 });
 
 Configuraciones opcionales:
-
+==========
 Parámetros opcionales hacer mas atractiva nuestra galería:
 
 fade
